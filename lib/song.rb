@@ -41,6 +41,12 @@ class Song
   end 
   
   def self.alphabetical
+    temp_arr = []
+    @@all.each { |item|
+      unless temp_arr.include?(item)
+        temp_arr << item
+      end
+    }
     self.all.sort_by{|item| item.name}
   end
   
