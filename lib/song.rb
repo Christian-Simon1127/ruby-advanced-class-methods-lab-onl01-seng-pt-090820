@@ -48,6 +48,7 @@ class Song
         0 
       else 
         1
+      end
     }
   end
   
