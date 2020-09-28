@@ -47,7 +47,7 @@ class Song
         temp_arr << item
       end
     }
-    self.all.sort_by{|item| item.name}
+    temp_arr.sort_by{|item| item.name}
   end
   
   def self.new_from_filename(file_name)
