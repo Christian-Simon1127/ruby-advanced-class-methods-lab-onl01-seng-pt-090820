@@ -43,11 +43,11 @@ class Song
   def self.alphabetical
     self.all.sort {|item, item2|
       if item.name > item2.name 
-        -1
+        1
       elsif item.name == item2.name
         0 
       else 
-        1
+        -1
       end
     }
   end
